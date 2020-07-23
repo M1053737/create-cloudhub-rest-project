@@ -35,9 +35,9 @@ node {
     stage("Cleanup and Update REST Template") {
         updateRestTemplate()
     }
-    stage("Create API in Design Center") {
-        createDesignCenterAPI()
-    }
+ //   stage("Create API in Design Center") {
+   //     createDesignCenterAPI()
+   // }
 
     stage("Create Jenkins Build Job") {
         createJenkinsBuildJob()
