@@ -33,7 +33,7 @@ node {
     }
 
     stage("Cleanup and Update REST Template") {
-        updateRestTemplate()
+        updateRestTemplate1()
     }
  //   stage("Create API in Design Center") {
    //     createDesignCenterAPI()
