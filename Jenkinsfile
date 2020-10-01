@@ -9,7 +9,8 @@ node {
         parameters([
             string(name: 'API_NAME', defaultValue: '', description: 'API Name (s, p or e)'),
             string(name: 'ORGANIZATION', defaultValue: 'Mulesoft', description: 'Organization'),
-            string(name: 'ENV', defaultValue: 'WH-CRM-TEST', description: 'Environment to Create Build Job')
+            string(name: 'ENV', defaultValue: 'WH-CRM-TEST', description: 'Environment to Create Build Job'),
+            string(name: 'RestTempUrl', defaultValue: '', description: 'REST Template Reference URL')
         ])
     ])
 
@@ -18,6 +19,7 @@ node {
         pipelinePlaceholders.setApiAssetId(params.API_NAME.toLowerCase())
         pipelinePlaceholders.setOrganization(params.ORGANIZATION)
         pipelinePlaceholders.setEnvironment(params.ENV)
+           pipelinePlaceholders.setRestTempUrl(params.RestTempUrl)
         pipelinePlaceholders.setDomainDependency("")
         pipelinePlaceholders.setDeploymentType("cloudhub")
         //pipelinePlaceholders.setVaultSecrets(getVaultSecrets())
