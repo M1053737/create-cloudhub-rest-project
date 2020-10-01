@@ -19,7 +19,7 @@ node {
         pipelinePlaceholders.setApiAssetId(params.API_NAME.toLowerCase())
         pipelinePlaceholders.setOrganization(params.ORGANIZATION)
         pipelinePlaceholders.setEnvironment(params.ENV)
-           pipelinePlaceholders.setRestTempUrl(params.RestTempUrl)
+        pipelinePlaceholders.setRestTempUrl(params.RestTempUrl)
         pipelinePlaceholders.setDomainDependency("")
         pipelinePlaceholders.setDeploymentType("cloudhub")
         //pipelinePlaceholders.setVaultSecrets(getVaultSecrets())
